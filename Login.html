@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login and Sign-up Form</title>
+<style>
+    body {
+        
+        font-family: Arial, sans-serif;
+        background-image: url('s1.jpg');
+     
+        
+
+        background-size:cover;
+       
+        background-repeat:no-repeat; 
+    }
+
+    .container {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+	
+    }
+    .forms {
+        margin-left: 50%;
+        padding: 20px;
+        border-radius: 5px;
+	max-width: 1000px; 
+	max-height: 1000px; 
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+	border-radius: 10px;
+  	padding: 100px;
+
+    }
+    input[type="text"], input[type="tel"], input[type="password"] {
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 17px;
+        border: 3px solid #ccc;	
+	
+    }
+ 
+input[type="submit"] {
+    background-color: #bf825b;
+    color: white;
+    cursor: pointer;
+    width: 100px; /* Set the width as needed */
+    height: 30px; /* Set the height as needed */
+    border: none;
+    border-radius: 17px;
+    margin: auto; /* Center the button horizontally */
+    display: block; 
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="forms" id="login-form">
+        <form action="home.html">
+            <h2 style="color: #bf825b;">Login</h2>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <p style="color: #a99da9;">Don't have an account? <a href="#" onclick="showSignUpForm()" style="color: #dea07b;">Sign Up</a></p>
+        </form>
+    </div>
+    <div class="forms" id="signup-form" style="display: none;">
+        <form action="home.html">
+            <h2 style="color: #bf825b;">Sign Up</h2>
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Sign Up">
+            <p style="color: #a99da9;">Already have an account? <a href="#" onclick="showLoginForm()"style="color:#dea07b ;">Login</a></p>
+        </form>
+    </div>
+</div>
+
+<script>
+    function showSignUpForm() {
+        document.getElementById('login-form').style.display = 'none';
+        document.getElementById('signup-form').style.display = 'block';
+    }
+
+    function showLoginForm() {
+        document.getElementById('signup-form').style.display = 'none';
+        document.getElementById('login-form').style.display = 'block';
+    }
+</script>
+</body>
+</html>

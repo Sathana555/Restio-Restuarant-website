@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamil Nadu Food Menu</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('k11.jpg');
+    background-size:cover;
+  
+    background-repeat:no-repeat; 
+    
+}
+.navbar img {
+
+  float: left;
+  height: 40px;
+  padding: 5px;
+        }
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  
+  background-color:#ebe8e7;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:black;
+  color: white;
+}
+
+.menu-card {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.menu-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+.menu-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.menu-item-details {
+    flex: 1;
+}
+.menu-item-details h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+.menu-item-details p {
+    margin: 5px 0;
+    color: #666;
+}
+.price {
+    color: #333;
+    font-weight: bold;
+}
+.order-btn {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.order-btn:hover {
+    background-color: #555;
+}
+
+.contents h1{
+font-size:30px;
+text-align:center;
+}
+.para p,br{
+font-size:20px;
+text-align:center;
+}
+
+</style>
+<body>
+
+<div class="topnav">
+  
+  <a href="#contact">Contact</a>
+  <a href="special_offers.html">Special Offers</a>
+  <a href="menu.html">Menu</a>
+  <a class ="c"href="#"FlavorsTriad>Flavors Triad</a>
+  <a href="about.html">About</a>
+  <a class="active" href="home.html">Home</a>
+
+  <div class="navbar">
+    <img src="logo.png" alt="Logo">  
+</div>
+</div>
+
+<div class="contents">
+<h1>"Treat yourself to our chef's favorites!"</h1>
+</div>
+
+
+<div class="menu-card">
+
+
+        <div class="menu-item">
+            <img src="idli.jfif" alt="Idli" class="menu-image">
+            <div class="menu-item-details">
+                <h3>Idli</h3>
+                <p>Steamed rice cakes served with sambar and chutney.</p>
+                <p class="price">5.99</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="dosa.jfif" alt="Dosa" class="menu-image">
+            <div class="menu-item-details">
+                <h3>Dosa</h3>
+                <p>Thin, crispy rice crepe served with sambar and chutney.</p>
+                <p class="price">7.99</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>    
+        <div class="menu-item">
+            <img src="n.jfif" alt="Noodles" class="menu-image">
+            <div class="menu-item-details">
+                <h3>Noodles</h3>
+                <p>Noodles loaded with a delicious mix of sun-dried vegetables.</p>
+                <p class="price">99.00</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+	<div class="menu-item">
+            <img src="p.jfif" alt="Parotta" class="menu-image">
+            <div class="menu-item-details">
+                <h3>Parotta</h3>
+                <p>Porotta with a surprising and tangy pickle filling.</p>
+                <p class="price">15.00</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

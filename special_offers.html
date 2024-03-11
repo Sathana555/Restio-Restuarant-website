@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Offers - Tamilnadu Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+.navbar img {
+
+  float: left;
+  height: 50px;
+  padding: 5px;
+        }
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  
+  background-color:#ebe8e7;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:black;
+  color: white;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+    background-image: url('l.jfif');
+        background-size:cover;
+  
+       background-repeat:no-repeat; 
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+}
+
+.special-offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+   margin-top: 20px; 
+}
+
+.offer {
+  margin: 10px;
+  padding: 20px;
+  background-color: white; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(33.33% - 40px); 
+  max-width: calc(33.33% - 40px); 
+  text-align: center; 
+}
+
+.offer img {
+  width: 80%; 
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.offer-details h3 {
+  margin-top: 0;
+}
+
+/* CSS Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animated-image {
+  animation: slideIn 1s ease-in-out;
+}
+
+
+</style>
+<body>
+<div class="topnav">
+  <a href="#contact">Contact</a>
+  <a href="special_offers.html">Special Offers</a>
+  <a href="menu.html">Menu</a>
+  <a class ="c"href="FlavorsTriad">Flavors Triad</a>
+  <a href="#about">About</a>
+  <a class="active" href="home.html">Home</a>
+  
+  <div class="navbar">
+   <img src="logo.png" alt="Logo">  
+</div>
+</div>
+<main>
+   
+    <section class="special-offers">
+     
+      <div class="offer">
+        <img src="s.jfif" alt="Special Offer 1" class="animated-image">
+        <div class="offer-details">
+          <h3>Combo Meal</h3>
+          <p>Enjoy our delicious combo meal with a variety of traditional Tamilnadu dishes.</p>
+          <p><strong>Price:</strong> 19.99</p>
+          <p><strong>Available:</strong> Monday to Friday</p>
+        </div>
+      </div>
+      <div class="offer">
+        <img src="o.jfif" alt="Special Offer 2" class="animated-image">
+        <div class="offer-details">
+          <h3>Weekend Buffet</h3>
+          <p>Indulge in our weekend buffet featuring a wide selection of authentic Tamilnadu cuisine.</p>
+          <p><strong>Price:</strong> 29.99 per person</p>
+          <p><strong>Available:</strong> Saturday & Sunday</p>
+        </div>
+      </div>
+    </section>
+</main>
+</body>
+</html>
